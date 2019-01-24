@@ -183,8 +183,8 @@ fn c_flags(target: &Target) -> &'static [&'static str] {
 fn cpp_flags(target: &Target) -> &'static [&'static str] {
     if target.env != MSVC {
         static NON_MSVC_FLAGS: &[&str] = &[
-            "-pedantic",
-            "-pedantic-errors",
+            // "-pedantic",
+            // "-pedantic-errors",
             "-Wall",
             "-Wextra",
             "-Wcast-align",
@@ -197,10 +197,10 @@ fn cpp_flags(target: &Target) -> &'static [&'static str] {
             "-Wmissing-declarations",
             "-Wmissing-field-initializers",
             "-Wmissing-include-dirs",
-            "-Wredundant-decls",
+            // "-Wredundant-decls",
             "-Wshadow",
             "-Wsign-compare",
-            "-Wundef",
+            // "-Wundef",
             "-Wuninitialized",
             "-Wwrite-strings",
             "-fno-strict-aliasing",
